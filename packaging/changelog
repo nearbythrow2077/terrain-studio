@@ -1,0 +1,22 @@
+terrain-studio (0.3.0) unstable; urgency=medium
+
+  * Import placed terrain, spheres, cubes, and perspective cameras from
+    Bryce 2 composite scenes.
+  * Support per-object elevation editing and preserve render dimensions.
+
+ -- Terrain Studio Local Build <terrain-studio@example.org>  Sat, 21 Nov 2026 13:26:00 +0530
+
+terrain-studio (0.2.0) unstable; urgency=medium
+
+  * Recover 16-bit terrain heightmaps from Bryce 2 composite scene files.
+  * Cache terrain intersection data and material conversions and distribute
+    render work in short strips to balance CPU utilization.
+
+ -- Terrain Studio Local Build <terrain-studio@example.org>  Sat, 21 Nov 2026 13:05:00 +0530
+
+terrain-studio (0.1.0) unstable; urgency=medium
+
+  * Initial local package with scene composition, CPU ray tracing, OBJ
+    and image panel import, Bryce 2 disc heightmaps, and PNG export.
+
+ -- Terrain Studio Local Build <terrain-studio@example.org>  Sat, 21 Nov 2026 12:00:00 +0530

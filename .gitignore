@@ -1,0 +1,5 @@
+/target/
+/dist/
+*.[iI][sS][oO]
+*.[bB][rR][cC]
+*.deb

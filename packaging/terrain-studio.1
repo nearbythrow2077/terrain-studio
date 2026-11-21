@@ -1,0 +1,66 @@
+.TH TERRAIN-STUDIO 1 "21 November 2026" "Terrain Studio 0.3.0"
+.SH NAME
+terrain-studio \- compose and render 3D landscapes and abstract scenes
+.SH SYNOPSIS
+.B terrain-studio
+.RI [ project.terrain | scene.BRC ]
+.br
+.B terrain-studio render
+.I output.png
+.RI [ options ]
+.br
+.B terrain-studio list-maps
+.I BRYCE2.iso
+.br
+.B terrain-studio list-brc-terrains
+.I SCENE.BRC
+.br
+.B terrain-studio convert-brc
+.I SCENE.BRC OUTPUT.terrain
+.SH DESCRIPTION
+Open the graphical scene editor, render a PNG without a desktop session,
+list the TIFF heightmaps available in a Bryce 2 ISO 9660 disc image,
+list elevation grids in a Bryce 2 composite scene, or convert supported
+geometry and camera settings to an editable Terrain Studio project.
+.SH RENDER OPTIONS
+.TP
+.BI --preset " name"
+Start from mirage, checker, mercury, alpine, canyon or coast.
+.TP
+.BI --scene " project.terrain"
+Render a saved Terrain Studio scene.
+.TP
+.BI --seed " N"
+Set the unsigned 32-bit seed used for scene generation and procedural materials.
+.TP
+.BI --size " WIDTHxHEIGHT"
+Set the output size (between 16 and 4096 per side). Defaults to the size
+stored in the project when available, or 960x720.
+.TP
+.BI --heightmap " image"
+Import a grayscale or color image as terrain.
+.TP
+.BI --iso " BRYCE2.iso"
+Read a heightmap from the disc image. Use with
+.BR --map .
+.TP
+.BI --map " NAME.TIF"
+Select the TIFF heightmap within the disc's TERRAIN folder.
+.TP
+.BI --brc " SCENE.BRC"
+Import an elevation grid from a Bryce 2 scene. Other scene settings
+come from the selected Terrain Studio project or preset.
+.TP
+.BI --brc-scene " SCENE.BRC"
+Restore the placed terrain, spheres, cubes and perspective camera.
+.TP
+.BI --terrain-index " ID"
+Select a Bryce 2 terrain resource by its table index. Defaults to the
+first terrain at the largest available resolution.
+.TP
+.B --draft
+Use a single sample per pixel for a faster preview render.
+.SH FILES
+.I *.terrain
+are Terrain Studio scene projects. They store the terrain and all object,
+atmosphere and camera settings needed to rerender the scene.

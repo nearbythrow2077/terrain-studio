@@ -1,0 +1,10 @@
+Terrain Studio
+
+Copyright (c) 2026 Terrain Studio contributors.
+The original application and desktop artwork are distributed under the GNU
+Affero General Public License, version 3 only. The full license text follows
+the dependency notice below.
+
+Copyright (c) 2015 nwin (PNG library).
+Rust dependencies and their complete license notices are listed in
+third-party-notices.gz in this directory.

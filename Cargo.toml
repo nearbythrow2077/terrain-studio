@@ -1,0 +1,17 @@
+[package]
+name = "terrain-studio"
+version = "0.3.0"
+edition = "2021"
+rust-version = "1.88"
+description = "Native terrain editing and landscape rendering for Linux"
+license = "AGPL-3.0-only"
+repository = "https://github.com/nearbythrow2077/terrain-studio"
+
+[dependencies]
+eframe = { version = "=0.31.1", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+image = { version = "=0.25.9", default-features = false, features = ["bmp", "jpeg", "png", "pnm", "tiff"] }
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde_json = "1.0"
+
+[profile.release]
+strip = true

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Terrain Studio
+GenericName=3D Scene Editor
+Comment=Compose surreal 3D scenes and render them to PNG
+Exec=terrain-studio %f
+Icon=terrain-studio
+Terminal=false
+Categories=Graphics;3DGraphics;
+MimeType=application/x-terrain-studio;
+StartupWMClass=terrain-studio
